@@ -33,9 +33,6 @@ img::-moz-selection  {background: transparent;}
 body {-webkit-tap-highlight-color: rgb(255,255,158);}
 
 /*    Default Layout: 992px. 
-      Gutters: 24px.
-      Outer margins: 48px.
-      Leftover space for scrollbars @1024px: 32px.
 -------------------------------------------------------------------------------
 cols    1     2      3      4      5      6      7      8      9      10
 px      68    160    252    344    436    528    620    712    804    896    */
@@ -54,7 +51,6 @@ body {
 
 
 /*    Tablet Layout: 768px.
-      Outer margins: 28px.
       Inherits styles from: Default Layout.
 -----------------------------------------------------------------
 cols    1     2      3      4      5      6      7      8
@@ -68,7 +64,6 @@ px      68    160    252    344    436    528    620    712    */
 
 
 /*    Mobile Layout: 320px.
-      Outer margins: 34px.
       Inherits styles from: Default Layout.
 ---------------------------------------------
 cols    1     2      3
@@ -82,7 +77,6 @@ px      68    160    252    */
 
 
 /*    Wide Mobile Layout: 480px.
-      Outer margins: 22px.
       Inherits styles from: Default Layout, Mobile Layout.
 ------------------------------------------------------------
 cols    1     2      3      4      5
