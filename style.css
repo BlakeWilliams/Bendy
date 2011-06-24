@@ -38,11 +38,10 @@ cols    1     2      3      4      5      6      7      8      9      10
 px      68    160    252    344    436    528    620    712    804    896    */
 
 body {
-    /* font: 16px/24px Georgia, serif; */
     font: 16px/24px Helvetica, Arial, sans-serif;
     background: #e8e8e8;
     color: #3c3c3c;
-    -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+    -webkit-text-size-adjust: 100%; /* No font adjustment for mobile safari */
 }
 
 .wrap {
@@ -62,16 +61,16 @@ px      68    160    252    344    436    528    620    712    */
    }
 }
 
-
 /*    Wide Mobile Layout: 480px.
 Inherits styles from: Default Layout, Mobile Layout.
 ------------------------------------------------------------
 cols    1     2      3      4      5
 px      68    160    252    344    436    */
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+@media only screen and (max-width: 767px) {
     .wrap {
-        width: 436px;
+        width: 252px;
    }
 }
 
@@ -82,8 +81,8 @@ Inherits styles from: Default Layout.
 cols    1     2      3
 px      68    160    252    */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 480px) {
     .wrap {
-        width: 252px;
+        width: 436px;
    }
 }
