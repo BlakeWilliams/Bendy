@@ -1,9 +1,7 @@
 /* 
-   Bendy by Blake Williams, http://bforblake.com/
-   Based on Less Framework 4 by Joni Korpi, http://lessframework.com
-   License: http://creativecommons.org/licenses/MIT/
+    Bendy by Blake Williams
+    License: http://creativecommons.org/licenses/MIT/
 */
-
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
 p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
 img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
@@ -11,26 +9,28 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figure, figcaption, hgroup, 
 menu, footer, header, nav, section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
-
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-   display: block;
+    display: block;
 }
 
 a img {border: 0;}
 
 /* Selection Colors */
-::selection       {background: rgb(255,255,158);}
-::-moz-selection  {background: rgb(255,255,158);}
-img::selection       {background: transparent;}
-img::-moz-selection  {background: transparent;}
-body {-webkit-tap-highlight-color: rgb(255,255,158);}
+::selection, ::-moz-selection {
+    background: #ff5e99;
+    color: #fff;
+}
+img::selection,img::-moz-selection {
+    background: transparent;
+}
+body {-webkit-tap-highlight-color: #ff5e99);}
 
 /*    Default Layout: 992px. 
 -------------------------------------------------------------------------------
@@ -38,52 +38,52 @@ cols    1     2      3      4      5      6      7      8      9      10
 px      68    160    252    344    436    528    620    712    804    896    */
 
 body {
-   /* font: 16px/24px Georgia, serif; */
-   font: 16px/24px Helvetica, Arial, sans-serif;
-   background: rgb(232,232,232);
-   color: rgb(60,60,60);
-   -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+    /* font: 16px/24px Georgia, serif; */
+    font: 16px/24px Helvetica, Arial, sans-serif;
+    background: #e8e8e8;
+    color: #3c3c3c;
+    -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
 }
 
 .wrap {
-   width: 896px;
+    width: 896px;
 }
 
 
 /*    Tablet Layout: 768px.
-      Inherits styles from: Default Layout.
+Inherits styles from: Default Layout.
 -----------------------------------------------------------------
 cols    1     2      3      4      5      6      7      8
 px      68    160    252    344    436    528    620    712    */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-   .wrap {
-      width: 712px;
-   }
-}
-
-
-/*    Mobile Layout: 320px.
-      Inherits styles from: Default Layout.
----------------------------------------------
-cols    1     2      3
-px      68    160    252    */
-
-@media only screen and (max-width: 767px) {
-   .wrap {
-      width: 252px;
+    .wrap {
+        width: 712px;
    }
 }
 
 
 /*    Wide Mobile Layout: 480px.
-      Inherits styles from: Default Layout, Mobile Layout.
+Inherits styles from: Default Layout, Mobile Layout.
 ------------------------------------------------------------
 cols    1     2      3      4      5
 px      68    160    252    344    436    */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-   .wrap {
-      width: 436px;
+    .wrap {
+        width: 436px;
+   }
+}
+
+
+/*    Mobile Layout: 320px.
+Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+    .wrap {
+        width: 252px;
    }
 }
