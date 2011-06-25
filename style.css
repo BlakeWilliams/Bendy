@@ -32,11 +32,6 @@ img::selection,img::-moz-selection {
 }
 body {-webkit-tap-highlight-color: #ff5e99);}
 
-/*    Default Layout: 992px. 
--------------------------------------------------------------------------------
-cols    1     2      3      4      5      6      7      8      9      10
-px      68    160    252    344    436    528    620    712    804    896    */
-
 body {
     font: 16px/24px Helvetica, Arial, sans-serif;
     background: #e8e8e8;
@@ -44,50 +39,49 @@ body {
     -webkit-text-size-adjust: 100%; /* No font adjustment for mobile safari */
 }
 
-/* Change body to whatever class/ID you want handling your resizable content*/
+/* Standard: 944px. 
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      70    162    254    346    438    530    622    714    806    898    */
+/* Change body to whatever class/ID you want handling your resizable content */
 body {
-    width: 896px;
+    width: 898px;
+    margin: 10px auto;
 }
 
-
-/*    Tablet Layout: 768px.
+/* Tablet: 768px.
 Inherits styles from: Default Layout.
 -----------------------------------------------------------------
 cols    1     2      3      4      5      6      7      8
-px      68    160    252    344    436    528    620    712    */
-
+px      70    162    254    346    438    530    622    714    */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    /* Change body to whatever class/ID you want handling your resizable content*/
+    /* Change body to whatever class/ID you want handling your resizable content */
     body {
-        width: 712px;
-   }
-
+        width: 714px;
+    }
 }
 
-/*    Wide Mobile Layout: 480px.
+/* Wide Mobile: 480px.
 Inherits styles from: Default Layout, Mobile Layout.
 ------------------------------------------------------------
 cols    1     2      3      4      5
-px      68    160    252    344    436    */
-
-
+px      70    162    254    346    438    */
 @media only screen and (max-width: 767px) {
-    /* Change body to whatever class/ID you want handling your resizable content*/
+    /* Change body to whatever class/ID you want handling your resizable content */
     body {
-        width: 252px;
-   }
+        width: 438px;
+        text-align: center;
+    }
 }
 
-
-/*    Mobile Layout: 320px.
+/* Mobile Layout: 320px.
 Inherits styles from: Default Layout.
 ---------------------------------------------
 cols    1     2      3
-px      68    160    252    */
-
-@media only screen and (max-width: 480px) {
-    /* Change body to whatever class/ID you want handling your resizable content*/
+px      70    162    254    */
+@media only screen and (max-width: 479px) {
+    /* Change body to whatever class/ID you want handling your resizable content */
     body {
-        width: 436px;
-   }
+        width: 254px;
+    }
 }
