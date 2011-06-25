@@ -39,7 +39,7 @@ body {
     -webkit-text-size-adjust: 100%; /* No font adjustment for mobile safari */
 }
 
-/* Standard: 944px. 
+/* Standard: 898px. 
 -------------------------------------------------------------------------------
 cols    1     2      3      4      5      6      7      8      9      10
 px      70    162    254    346    438    530    622    714    806    898    */
@@ -49,7 +49,7 @@ body {
     margin: 10px auto;
 }
 
-/* Tablet: 768px.
+/* Tablet: 714px.
 Inherits styles from: Default Layout.
 -----------------------------------------------------------------
 cols    1     2      3      4      5      6      7      8
@@ -61,7 +61,7 @@ px      70    162    254    346    438    530    622    714    */
     }
 }
 
-/* Wide Mobile: 480px.
+/* Wide Mobile: 438px.
 Inherits styles from: Default Layout, Mobile Layout.
 ------------------------------------------------------------
 cols    1     2      3      4      5
@@ -74,7 +74,7 @@ px      70    162    254    346    438    */
     }
 }
 
-/* Mobile Layout: 320px.
+/* Mobile Layout: 254px.
 Inherits styles from: Default Layout.
 ---------------------------------------------
 cols    1     2      3
