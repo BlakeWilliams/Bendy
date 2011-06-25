@@ -70,7 +70,6 @@ px      70    162    254    346    438    */
     /* Change body to whatever class/ID you want handling your resizable content */
     body {
         width: 438px;
-        text-align: center;
     }
 }
 
