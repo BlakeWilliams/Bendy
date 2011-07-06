@@ -24,8 +24,8 @@ a img {border: 0;}
 
 /* Selection Colors */
 ::selection, ::-moz-selection {
-    background: #ff5e99;
-    color: #fff;
+    background: #bcbcbc;
+    color: #3e3e3e;
 }
 img::selection,img::-moz-selection {
     background: transparent;
