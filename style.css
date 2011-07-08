@@ -35,7 +35,7 @@ body {
     font: 16px/24px Helvetica, Arial, sans-serif;
     background: #e8e8e8;
     color: #3c3c3c;
-    -webkit-tap-highlight-color: #ff5e99);
+    -webkit-tap-highlight-color: #ff5e99;
     -webkit-text-size-adjust: 100%; /* No font adjustment for mobile safari */
 }
 
@@ -47,6 +47,10 @@ px      70    162    254    346    438    530    622    714    806    898    */
 body {
     width: 898px;
     margin: 10px auto;
+}
+#new-todo input {
+    width: 400px;
+    font-size: 18px;
 }
 
 /* Tablet: 714px.
