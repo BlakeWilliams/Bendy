@@ -1,0 +1,50 @@
+@mixin inheritance {
+    font-style: inherit;
+    line-height: inherit;
+}
+p {
+    font-size: $basefont -2;
+    font-weight: normal;
+    line-height: 18px;
+    margin-bottom: $baseline / 2;
+    small {
+        font-size: 11px;
+        color: #bfbfbf;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #404040;
+    small {
+        color: #bfbfbf;
+    }
+}
+
+ul, ol {
+    margin: 0 0 $baseline 25px;
+    .unstyled {
+        list-style: none;
+        margin-left: 0;
+    }
+}
+
+li {
+    line-height: $baseline;
+}
+
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #eee;
+}
+
+strong {
+    @include inheritance;
+    font-weight: bold;
+}
+
+em {
+    @include inheritance;
+    font-style: italic;
+}

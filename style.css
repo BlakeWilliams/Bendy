@@ -1,90 +1,140 @@
-/* 
-    Bendy by Blake Williams
-    License: http://creativecommons.org/licenses/MIT/
-*/
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
-p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
-img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figure, figcaption, hgroup, 
-menu, footer, header, nav, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-    display: block;
+  display: block;
 }
 
-a img {border: 0;}
+a img {
+  border: 0;
+}
 
-/* Selection Colors */
 ::selection, ::-moz-selection {
-    background: #bcbcbc;
-    color: #3e3e3e;
-}
-img::selection,img::-moz-selection {
-    background: transparent;
+  background: #bcbcbc;
+  color: #3e3e3e;
 }
 
+p {
+  font-size: 13px -2;
+  font-weight: normal;
+  line-height: 18px;
+  margin-bottom: 9px;
+}
+p small {
+  font-size: 11px;
+  color: #bfbfbf;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #404040;
+}
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  color: #bfbfbf;
+}
+
+ul, ol {
+  margin: 0 0 18px 25px;
+}
+ul .unstyled, ol .unstyled {
+  list-style: none;
+  margin-left: 0;
+}
+
+li {
+  line-height: 18px;
+}
+
+hr {
+  margin: 0 0 19px;
+  border: 0;
+  border-bottom: 1px solid #eee;
+}
+
+strong {
+  font-style: inherit;
+  line-height: inherit;
+  font-weight: bold;
+}
+
+em {
+  font-style: inherit;
+  line-height: inherit;
+  font-style: italic;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 18px;
+  border-collapse: separate;
+  font-size: 13px;
+}
+table th, table td {
+  padding: 10px 10px 9px;
+  line-height: 13.5px;
+  text-align: left;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+table th {
+  padding-top: 9px;
+  font-weight: bold;
+  border-bottom-width: 2px;
+}
+
+.striped tbody tr:nth-child(odd) td {
+  background-color: #f9f9f9;
+}
+.striped tbody tr:hover td {
+  background-color: #f5f5f5;
+}
+
+/* Default Styles */
 body {
-    font: 16px/24px Helvetica, Arial, sans-serif;
-    background: #e8e8e8;
-    color: #3c3c3c;
-    -webkit-tap-highlight-color: #ff5e99;
-    -webkit-text-size-adjust: 100%; /* No font adjustment for mobile safari */
-}
-
-/* Standard: 898px. 
--------------------------------------------------------------------------------
-cols    1     2      3      4      5      6      7      8      9      10
-px      70    162    254    346    438    530    622    714    806    898    */
-/* Change body to whatever class/ID you want handling your resizable content */
-body {
-    width: 898px;
-    margin: 10px auto;
-}
-#new-todo input {
-    width: 400px;
-    font-size: 18px;
-}
-
-/* Tablet: 714px.
-Inherits styles from: Default Layout.
------------------------------------------------------------------
-cols    1     2      3      4      5      6      7      8
-px      70    162    254    346    438    530    622    714    */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    /* Change body to whatever class/ID you want handling your resizable content */
-    body {
-        width: 714px;
-    }
-}
-
-/* Wide Mobile: 438px.
-Inherits styles from: Default Layout, Mobile Layout.
-------------------------------------------------------------
-cols    1     2      3      4      5
-px      70    162    254    346    438    */
-@media only screen and (max-width: 767px) {
-    /* Change body to whatever class/ID you want handling your resizable content */
-    body {
-        width: 438px;
-    }
-}
-
-/* Mobile Layout: 254px.
-Inherits styles from: Default Layout.
----------------------------------------------
-cols    1     2      3
-px      70    162    254    */
-@media only screen and (max-width: 479px) {
-    /* Change body to whatever class/ID you want handling your resizable content */
-    body {
-        width: 254px;
-    }
+  width: 898px;
+  margin: 10px auto;
+  padding: 0 22px;
 }

@@ -1,0 +1,29 @@
+table {
+    width: 100%;
+    margin-bottom: $baseline;
+    border-collapse: separate;
+    font-size: $basefont;
+    th, td {
+        padding: 10px 10px 9px;
+        line-height: $baseline * .75;
+        text-align: left;
+        vertical-align: middle;
+        border-bottom: 1px solid #ddd;
+    }
+    th {
+        padding-top: 9px;
+        font-weight: bold;
+        border-bottom-width: 2px;
+    }
+}
+
+.striped {
+    tbody {
+        tr:nth-child(odd) td {
+            background-color: #f9f9f9;
+        }
+        tr:hover td {
+            background-color: #f5f5f5;
+        }
+    }
+}
