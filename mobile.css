@@ -1,18 +1,18 @@
 /* Tablet :: Inherits from default */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .wrapper {
+  #wrapper {
     width: 714px;
   }
 }
 /* Mobile :: Inherits from default  */
 @media only screen and (max-width: 767px) {
-  .wrapper {
+  #wrapper {
     width: 254px;
   }
 }
 /* Wide Mobile :: Inherits from default and Mobile */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .wrapper {
+  #wrapper {
     width: 438px;
   }
 }
