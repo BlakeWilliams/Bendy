@@ -1,4 +1,5 @@
-Bendy Framework based off of the Less Framework, available at http://lessframework.com/
+# Bendy Framework
+An awesome simple and tiny framework for making responsive websites that scale from desktop size layouts, down to mobile sized layouts. It includes 3 media queries that all inherit from your default styles. These are tablet, mobile, and wide mobile (also inherits from mobile).
 
 # Usage
 There are two ways that you can Bendy, you can modify the files in the SASS directory which contains the SCSS files, or you can use the precompiled style.css and mobile.css. If you prefer to have only one CSS file for mobile and style.css, add @import 'mobile' to index.scss and rename mobile.scss to _mobile.scss and you'll end up with a single css file with all of your code. If you want readable CSS to be generated (like what style.css and mobile.css look like now) when using SCSS, watch the files using 
