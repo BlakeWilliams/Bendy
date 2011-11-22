@@ -1,0 +1,11 @@
+// variables
+$baseline: 18px;
+$basefont: 14px;
+$light-gray: #ddd;
+$dark-gray: #404040;
+
+// mixins!
+@mixin inheritance {
+  font-style: inherit;
+  line-height: inherit;
+}

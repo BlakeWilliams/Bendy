@@ -1,94 +1,80 @@
-@mixin inheritance {
-    font-style: inherit;
-    line-height: inherit;
-}
+
 p {
-    font-size: $basefont -2;
-    font-weight: normal;
-    line-height: 18px;
-    margin-bottom: $baseline / 2;
-    small {
-        font-size: 11px;
-        color: #bfbfbf;
-    }
+  font-size: $basefont;
+  line-height: $baseline;
+  margin-bottom: $baseline / 2;
+  color: #404040;
+  small {
+    font-size: 11px;
+    color: #bfbfbf;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-    color: #404040;
-    small {
-        color: #bfbfbf;
-    }
+  color: #404040;
+  font-weight: bold;
+  margin-bottom: 10px;
+  a { font-weight: bold; }
+  small { color: #bfbfbf; }
 }
 
 h1 {
   font-size: 30px;
-  margin-bottom: $baseline / 2;
-  line-height: $baseline * 2;
-  small {
-    font-size: 18px
-  }
+  margin-bottom: 15px;
+  small { font-size: 18px }
 }
 
 h2 {
   font-size: 24px;
-  line-height: $baseline * 2;
-  small {
-    font-size: 14px;
-  }
+  small { font-size: 15px; }
 }
 
-h3, h4, h5, h6 {
-  line-height: $baseline * 2;
-}
 
 h3 {
   font-size: 18px;
-  small {
-    font-size: 14px;
-  }
+  small { font-size: 14px; }
 }
 
 h4 {
   font-size: 16px;
-  small {
-    font-size: 12px;
-  }
+  small { font-size: 12px; }
 }
 
-h5 {
-  font-size: 14px;
-}
+h5 { font-size: 14px; }
 
 h6 {
-  font-size: 13px;
+  font-size: 12px;
   text-transform: uppercase;
 }
 
 ul, ol {
-    margin: 0 0 $baseline 25px;
-    .unstyled {
-        list-style: none;
-        margin-left: 0;
-    }
+  margin: 0 0 $baseline 25px;
+}
+
+ul { list-style: disc; }
+ol { list-style: decimal; }
+
+.unstyled {
+    list-style: none;
+    margin-left: 0;
 }
 
 li {
-    line-height: $baseline;
+  line-height: $baseline;
 }
 
 hr {
-    margin: 0 0 19px;
-    border: 0;
-    border-bottom: 1px solid #eee;
+  margin: 0 0 19px;
+  border: 0;
+  border-bottom: 1px solid $light-gray;
 }
 
 strong {
-    @include inheritance;
-    font-weight: bold;
+  @include inheritance;
+  font-weight: bold;
 }
 
 em {
-    @include inheritance;
-    font-style: italic;
+  @include inheritance;
+  font-style: italic;
 }

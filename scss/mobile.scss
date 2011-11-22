@@ -1,22 +1,22 @@
 /* Tablet :: Inherits from default */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    #wrapper {
-      width: 714px;
-    }
+  #wrapper {
+    width: 714px;
+  }
 }
 
 /* Mobile :: Inherits from default  */
 @media only screen and (max-width: 767px) {
-    #wrapper {
-      width: 254px;
-    }
+  #wrapper {
+    width: 254px;
+  }
 }
 
 /* Wide Mobile :: Inherits from default and Mobile */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-    #wrapper {
-      width: 438px;
-    }
+  #wrapper {
+    width: 438px;
+  }
 }
 /* Grid Reference
 cols    1     2      3      4      5      6      7      8

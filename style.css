@@ -58,10 +58,10 @@ a img {
 }
 
 p {
-  font-size: 13px -2;
-  font-weight: normal;
+  font-size: 14px;
   line-height: 18px;
   margin-bottom: 9px;
+  color: #404040;
 }
 p small {
   font-size: 11px;
@@ -69,8 +69,12 @@ p small {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
   color: #404040;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: bold;
 }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   color: #bfbfbf;
@@ -78,8 +82,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 
 h1 {
   font-size: 30px;
-  margin-bottom: 9px;
-  line-height: 36px;
+  margin-bottom: 15px;
 }
 h1 small {
   font-size: 18px;
@@ -87,14 +90,9 @@ h1 small {
 
 h2 {
   font-size: 24px;
-  line-height: 36px;
 }
 h2 small {
-  font-size: 14px;
-}
-
-h3, h4, h5, h6 {
-  line-height: 36px;
+  font-size: 15px;
 }
 
 h3 {
@@ -116,14 +114,23 @@ h5 {
 }
 
 h6 {
-  font-size: 13px;
+  font-size: 12px;
   text-transform: uppercase;
 }
 
 ul, ol {
   margin: 0 0 18px 25px;
 }
-ul .unstyled, ol .unstyled {
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+.unstyled {
   list-style: none;
   margin-left: 0;
 }
@@ -135,7 +142,7 @@ li {
 hr {
   margin: 0 0 19px;
   border: 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #dddddd;
 }
 
 strong {
@@ -154,7 +161,7 @@ table {
   width: 100%;
   margin-bottom: 18px;
   border-collapse: separate;
-  font-size: 13px;
+  font-size: 14px;
 }
 table th, table td {
   padding: 10px 10px 9px;
@@ -177,6 +184,14 @@ table th {
 }
 
 /* Default Styles */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #404040;
+  line-height: 18px;
+}
+
 #wrapper {
   width: 898px;
   margin: 10px auto;
