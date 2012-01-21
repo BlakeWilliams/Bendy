@@ -1,4 +1,7 @@
-Bendy Framework inspired by the Less Framework, available at http://lessframework.com/
+# Bendy Framework
+An awesome simple and tiny framework for making responsive websites that scale from desktop size layouts, down to mobile sized layouts. It includes 3 media queries that all inherit from your default styles. These are tablet, mobile, and wide mobile (also inherits from mobile).
 
-# Customizing
-Bendy by default assumes that you want to use body as your container. This has its advantages but there are also quite a few reasons why you wouldn't want body to be your container. One of these reasons is full width divs. If you want a full width div, change all 4 instances of body that is underneath a size definition and keep the div that you want to be full width outside of the container.
+# Usage
+Just use the following code to change the SCSS into the proper CSS. Ff you want your code compressed, change expanded to compressed.
+
+    sass --watch scss:. --style expanded
