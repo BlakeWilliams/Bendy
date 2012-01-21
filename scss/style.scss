@@ -1,19 +1,11 @@
-@import "mixins";
 @import "reset";
 @import "typography";
-@import "tables";
 
 /* Default Styles */
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: $basefont;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
   font-weight: normal;
-  color: $dark-gray;
-  line-height: $baseline;
-}
-
-#wrapper {
-  width: 898px;
-  margin: 10px auto;
-  padding: 0 22px;
+  color: #404040;
+  line-height: 1.2;
 }

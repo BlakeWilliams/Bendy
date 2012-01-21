@@ -59,8 +59,8 @@ a img {
 
 p {
   font-size: 14px;
-  line-height: 18px;
-  margin-bottom: 9px;
+  line-height: 1.2;
+  margin-bottom: 8px;
   color: #404040;
 }
 p small {
@@ -82,7 +82,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 
 h1 {
   font-size: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 h1 small {
   font-size: 18px;
@@ -136,12 +136,12 @@ ol {
 }
 
 li {
-  line-height: 18px;
+  line-height: 1.2;
 }
 
 hr {
-  margin: 0 0 19px;
   border: 0;
+  line-height: 1;
   border-bottom: 1px solid #dddddd;
 }
 
@@ -157,43 +157,11 @@ em {
   font-style: italic;
 }
 
-table {
-  width: 100%;
-  margin-bottom: 18px;
-  border-collapse: separate;
-  font-size: 14px;
-}
-table th, table td {
-  padding: 10px 10px 9px;
-  line-height: 13.5px;
-  text-align: left;
-  vertical-align: middle;
-  border-bottom: 1px solid #ddd;
-}
-table th {
-  padding-top: 9px;
-  font-weight: bold;
-  border-bottom-width: 2px;
-}
-
-.striped tbody tr:nth-child(odd) td {
-  background-color: #f9f9f9;
-}
-.striped tbody tr:hover td {
-  background-color: #f5f5f5;
-}
-
 /* Default Styles */
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   color: #404040;
-  line-height: 18px;
-}
-
-#wrapper {
-  width: 898px;
-  margin: 10px auto;
-  padding: 0 22px;
+  line-height: 1.2;
 }
