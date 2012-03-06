@@ -5,12 +5,14 @@
 
 /* Mobile :: Inherits from default  */
 @media only screen and (max-width: 767px) {
-    b {
-        color: #fff;
-    }
+
 }
 
 /* Wide Mobile :: Inherits from default and Mobile */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-    
+
 }
+
+/* Grid Reference
+cols    1     2      3      4      5      6      7      8
+px      70    162    254    346    438    530    622    714  */
